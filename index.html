@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexTech — технологии будущего</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Анимированный фон -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- ==================== ШАПКА САЙТА ==================== -->
+    <header class="header">
+        <div class="container header__inner">
+            <!-- Логотип -->
+            <a href="#" class="logo">
+                <span class="logo__mark">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" 
+                              stroke="currentColor" stroke-width="2" 
+                              stroke-linejoin="round"/>
+                        <path d="M12 2V22M3 7L21 17M21 7L3 17" 
+                              stroke="currentColor" stroke-width="1" 
+                              opacity="0.5"/>
+                    </svg>
+                </span>
+                <span class="logo__text">HEX<span class="logo__accent">TECH</span></span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link nav__link--active">Главная</a></li>
+                    <li><a href="#catalog" class="nav__link">Каталог</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Поиск и корзина -->
+            <div class="header__actions">
+                <input type="search" class="search" placeholder="Поиск...">
+                <button class="cart-btn" aria-label="Корзина">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-btn__count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== БАННЕР ==================== -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__badge">// НОВАЯ ЭРА ТЕХНОЛОГИЙ</div>
+            <h1 class="hero__title">
+                Электроника<br>
+                <span class="hero__gradient">из будущего</span>
+            </h1>
+            <p class="hero__subtitle">
+                Более 5000 девайсов нового поколения с гарантией и мгновенной доставкой
+            </p>
+            <div class="hero__actions">
+                <a href="#catalog" class="btn btn--primary">Перейти в каталог</a>
+                <a href="#services" class="btn btn--ghost">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== КАТАЛОГ ТОВАРОВ ==================== -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag">// КАТАЛОГ</span>
+                <h2 class="section-title">Популярные товары</h2>
+            </div>
+
+            <div class="products">
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">📱</div>
+                    <span class="product-card__badge">NEW</span>
+                    <h3 class="product-card__title">Смартфон Galaxy X20</h3>
+                    <p class="product-card__desc">6.5", 128 ГБ, 8 ГБ RAM</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">34 990 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">💻</div>
+                    <h3 class="product-card__title">Ноутбук ProBook 15</h3>
+                    <p class="product-card__desc">Intel i5, 16 ГБ, SSD 512 ГБ</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">62 500 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">🎧</div>
+                    <span class="product-card__badge">-15%</span>
+                    <h3 class="product-card__title">Наушники AirSound</h3>
+                    <p class="product-card__desc">Беспроводные, шумоподавление</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">8 990 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">⌚</div>
+                    <h3 class="product-card__title">Умные часы FitPro</h3>
+                    <p class="product-card__desc">AMOLED, GPS, влагозащита</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">12 490 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">📷</div>
+                    <h3 class="product-card__title">Фотоаппарат Canon M50</h3>
+                    <p class="product-card__desc">24 Мп, 4K видео</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">48 900 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__glow"></div>
+                    <div class="product-card__image">🖥️</div>
+                    <h3 class="product-card__title">Монитор UltraView 27"</h3>
+                    <p class="product-card__desc">144 Гц, IPS, 2K</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__price">22 990 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== УСЛУГИ ==================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag">// УСЛУГИ</span>
+                <h2 class="section-title">Что мы предлагаем</h2>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🚀</div>
+                    <h3>Мгновенная доставка</h3>
+                    <p>Доставим заказ в течение 24 часов по всей России</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🛡️</div>
+                    <h3>Гарантия 24 месяца</h3>
+                    <p>Официальная гарантия на всю технику без исключений</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">💳</div>
+                    <h3>Оплата частями 0%</h3>
+                    <p>Рассрочка до 12 месяцев без переплат и скрытых условий</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🔄</div>
+                    <h3>Возврат 30 дней</h3>
+                    <p>Не подошло? Вернём деньги без лишних вопросов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ПОДВАЛ ==================== -->
+    <footer class="footer" id="contacts">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a href="#" class="logo logo--footer">
+                    <span class="logo__mark">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                            <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" 
+                                  stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="logo__text">HEX<span class="logo__accent">TECH</span></span>
+                </a>
+                <p class="footer__about">
+                    Интернет-магазин электроники нового поколения. Работаем с 2015 года.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p>+7 (800) 555-35-35</p>
+                <p>info@hextech.ru</p>
+                <p>г. Москва, ул. Ленина, 15</p>
+            </div>
+            <div class="footer__col">
+                <h4>Мы в сети</h4>
+                <div class="socials">
+                    <a href="#" class="social">VK</a>
+                    <a href="#" class="social">TG</a>
+                    <a href="#" class="social">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2025 HexTech. Все права защищены. Сделано в будущем.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
